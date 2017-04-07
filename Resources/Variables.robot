@@ -42,7 +42,7 @@ ${REG_COUNTRY} =  xpath=//*[@id="resident_country"]/optgroup[1]/option[1]
 ${REG_CITIZENSHIP} =  //*[@id="citizenship"]
 ${REG_PAGKAMAMAMAYAN} =  african
 ${REG_CONTACT_NUMBER} =  xpath=//*[@id="contact_number"]
-${REG_TELEPONO} =  2346857455
+${REG_TELEPONO} =  2346857455845645
 ${REG_SEC_QUESTION} =  xpath=//*[@id="security_question"]/option[3]
 ${REG_SEC_ANSWER} =  xpath=//*[@id="security_answer"]
 ${REG_SAGOT} =  KASARIAN
