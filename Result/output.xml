@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170407 15:24:19.878" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<suite source="C:\Users\TRPLEONE\PycharmProjects\SmartBackEnd\Test\Yuanbao\Test.robot" id="s1" name="Test">
+<test id="s1-t1" name="Search Player">
+<kw type="setup" name="YB BrowserInit" library="Keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${YB_URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20170407 15:24:19.978" level="INFO">Opening browser 'chrome' to base url 'http://admin.yuanbao.og.office'</msg>
+<status status="PASS" endtime="20170407 15:24:24.354" starttime="20170407 15:24:19.978"></status>
+</kw>
+<status status="PASS" endtime="20170407 15:24:24.354" starttime="20170407 15:24:19.978"></status>
+</kw>
+<kw name="YB Login" library="Keywords">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${UNAMEBOX}</arg>
+<arg>${UNAME}</arg>
+</arguments>
+<msg timestamp="20170407 15:24:24.359" level="INFO">Typing text 'superadmin' into text field 'css=#login'</msg>
+<status status="PASS" endtime="20170407 15:24:24.497" starttime="20170407 15:24:24.357"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PWBOX}</arg>
+<arg>${YB_PWORD}</arg>
+</arguments>
+<msg timestamp="20170407 15:24:24.498" level="INFO">Typing text 'laifuwifi999' into text field 'css=#password'</msg>
+<status status="PASS" endtime="20170407 15:24:24.598" starttime="20170407 15:24:24.497"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${LOGINBTN}</arg>
+</arguments>
+<msg timestamp="20170407 15:24:24.599" level="INFO">Clicking element 'css=body &gt; div &gt; div:nth-child(1) &gt; div.panel.panel-primary &gt; div.panel-body &gt; form &gt; center &gt; div &gt; input'.</msg>
+<status status="PASS" endtime="20170407 15:24:25.453" starttime="20170407 15:24:24.598"></status>
+</kw>
+<status status="PASS" endtime="20170407 15:24:25.454" starttime="20170407 15:24:24.356"></status>
+</kw>
+<kw name="YB Search Player" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${HOME_PLAYER_TAB}</arg>
+</arguments>
+<msg timestamp="20170407 15:24:25.457" level="INFO">Clicking element 'xpath=//*[@id="bs-navbar-collapse-1"]/nav/div/ul[1]/li[1]/a'.</msg>
+<status status="PASS" endtime="20170407 15:24:26.352" starttime="20170407 15:24:25.456"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${PL_SEARCH_TB}</arg>
+<arg>${USER1}</arg>
+</arguments>
+<msg timestamp="20170407 15:24:26.353" level="INFO">Typing text 'testley1' into text field 'css=#username'</msg>
+<status status="PASS" endtime="20170407 15:24:26.554" starttime="20170407 15:24:26.352"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${PL_SEARCH_BTN}</arg>
+</arguments>
+<msg timestamp="20170407 15:24:26.555" level="INFO">Clicking element 'css=#collapsePlayerList &gt; div.panel-footer.text-center &gt; input.btn.btn-primary.btn-sm'.</msg>
+<status status="PASS" endtime="20170407 15:24:27.189" starttime="20170407 15:24:26.554"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170407 15:24:30.208" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170407 15:24:30.208" starttime="20170407 15:24:27.189"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>css=#main_content &gt; div.col-md-12 &gt; div:nth-child(1) &gt; div &gt; div</arg>
+</arguments>
+<msg timestamp="20170407 15:24:30.208" level="INFO">Verifying element 'css=#main_content &gt; div.col-md-12 &gt; div:nth-child(1) &gt; div &gt; div' is visible.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20170407 15:24:30.359" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20170407 15:24:30.359" starttime="20170407 15:24:30.254"></status>
+</kw>
+<msg timestamp="20170407 15:24:30.360" level="FAIL">The element 'css=#main_content &gt; div.col-md-12 &gt; div:nth-child(1) &gt; div &gt; div' should be visible, but it is not.</msg>
+<status status="FAIL" endtime="20170407 15:24:30.360" starttime="20170407 15:24:30.208"></status>
+</kw>
+<status status="FAIL" endtime="20170407 15:24:30.360" starttime="20170407 15:24:25.455"></status>
+</kw>
+<kw type="teardown" name="Close" library="Keywords">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20170407 15:24:33.473" starttime="20170407 15:24:30.361"></status>
+</kw>
+<status status="PASS" endtime="20170407 15:24:33.473" starttime="20170407 15:24:30.361"></status>
+</kw>
+<tags>
+<tag>Player</tag>
+<tag>Search</tag>
+<tag>Valid</tag>
+</tags>
+<status status="FAIL" endtime="20170407 15:24:33.473" critical="yes" starttime="20170407 15:24:19.978">The element 'css=#main_content &gt; div.col-md-12 &gt; div:nth-child(1) &gt; div &gt; div' should be visible, but it is not.</status>
+</test>
+<status status="FAIL" endtime="20170407 15:24:33.473" starttime="20170407 15:24:19.878"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="0">Critical Tests</stat>
+<stat fail="1" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat fail="1" pass="0">Player</stat>
+<stat fail="1" pass="0">Search</stat>
+<stat fail="1" pass="0">Valid</stat>
+</tag>
+<suite>
+<stat fail="1" id="s1" name="Test" pass="0">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
