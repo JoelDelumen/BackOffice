@@ -2,7 +2,7 @@
 Library  Selenium2Library
 
 *** Variables ***
-#these are for the LOGIN PROPER
+#+++++++++++++++++++++++++++++++++++++++LOGIN PROPER++++++++++++++++++++++++++++++++++++++++++++++++
 ${BROWSER_CLOSE} =  Close Browser
 ${BROWSER} =  chrome
 ${URL} =  http://admin.demo.tripleonetech.com
