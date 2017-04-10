@@ -70,6 +70,37 @@ YB New Deposit
     click element  ${DEP_PLAYER_ACCOUNT}
     input text  ${DEP_NOTE}  Test Deposit
     click element  ${DEP_ADD_BTN}
+    alert should be present
+YB Declined Deposit
+    click element  ${HOME_PAYMENT_TAB}
+    click element  ${PAY_DETAIL_BTN}
+    sleep  2s
+    input text  ${PAY_REMARKS}  ${COMMENT}
+    sleep  2s
+    click element  ${PAY_DECLINE_BTN}
+    alert should be present
+YB Approved Deposit
+    click element  ${HOME_PAYMENT_TAB}
+    click element  ${PAY_DETAIL_BTN}
+    sleep  2s
+    input text  ${PAY_REMARKS}  ${COMMENT}
+    sleep  2s
+    click element  ${PAY_APPROVE_BTN}
+    alert should be present
+YB Cancel Deposit
+    click element  ${HOME_PAYMENT_TAB}
+    click element  ${PAY_DETAIL_BTN}
+    sleep  2s
+    input text  ${PAY_REMARKS}  ${COMMENT}
+    sleep  2s
+    click element  ${PAY_CLOSE_BTN}
+
+YB Deposit Processing List
+    click element  ${HOME_PAYMENT_TAB}
+    click element  ${DEP_PROC_LIST}
+    element should be visible  xpath=//*[@id="toggleView"]/div[2]/div[1]/h4/i
+YB New Backend User
+
 
 
 

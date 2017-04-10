@@ -10,16 +10,23 @@ ${YB_URL} =  http://admin.yuanbao.og.office
 ${UNAME} =  superadmin
 ${PWORD} =  laifuwifi***
 ${USER1} =  testley1
+#====================================================================================================
 #+++++++++++++++++++++++++++++++++++++++YUANBAO++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#====================================================================================================
 ${YB_PWORD} =  laifuwifi999
 ${UNAMEBOX} =  css=#login
 ${PWBOX} =  css=#password
 ${LOGINBTN} =  css=body > div > div:nth-child(1) > div.panel.panel-primary > div.panel-body > form > center > div > input
-
+#++++++++++++++++++++++++++++++++++++++++COMMON+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+${COMMENT} =  This is a test!
+${ADMIN_USER2} =  admin
+${LEFT_MENU} =  css=#main_icon
 #++++++++++++++++++++++++++++++++++++INVALID INPUTS+++++++++++++++++++++++++++++++++++++++++++++++++++
 ${INV_USERNAME} =  joel123
 ${INV_PWORD} =  09986757438593
+#=====================================================================================================
 #+++++++++++++++++++++++++++++++REGISTRATION for YUANBAO++++++++++++++++++++++++++++++++++++++++++++++
+#=====================================================================================================
 ${REG_URL} =  http://player.demo.tripleonetech.com
 ${REGISTRATION} =  css=body > div.panel.panel-primary > div.panel-body > div > div > center > label > a:nth-child(1)
 ${REG_UNAMEBOX} =  xpath=//*[@id="username"]
@@ -66,4 +73,64 @@ ${DEP_DATE} =  css=#date
 ${DEP_NOTE} =  css=#reason
 ${DEP_STATUS} =  css=#form > div:nth-child(8) > label:nth-child(3) > input
 ${DEP_ADD_BTN} =  css=#main_content > div > div > div > div.panel-footer > div > button
+${DEP_PROC_LIST} =  css=#main_content > div.panel.panel-primary > div.panel-heading > h4 > div > a.btn.btn-default.btn-xs > span
+#+++++++++++++++++++++++++++++++++++++++++++++PAYMENT++++++++++++++++++++++++++++++++++++++++++
+${HOME_PAYMENT_TAB} =  xpath=//*[@id="bs-navbar-collapse-1"]/nav/div/ul[1]/li[3]/a
+${PAY_DETAIL_BTN} =  css=#deposit-table > tbody > tr:nth-child(1) > td:nth-child(1) > span
+${PAY_REMARKS} =  xpath=//*[@id="remarksTxt"]
+${PAY_APPROVE_BTN} =  xpath=//*[@id="approve_btn"]
+${PAY_DECLINE_BTN} =  xpath=//*[@id="decline_btn"]
+${PAY_CLOSE_BTN} =  css=#response-sec > div > button
+#+++++++++++++++++++++++++++++++++++++++++++++WITHDRAWAL+++++++++++++++++++++++++++++++++++++++
+${WDRAW_AMOUNT} =  css=#amount
+${WDRAW_BANK} =  css=#bank
+${WDRAW_NOTE} =  css=#reason
+${WDRAW_BTN} =  css=#main_content > div > div > div > div.panel-footer > div > button
 
+#==============================================================================================
+#++++++++++++++++++++++++++++++++++++++++++++SYSTEM PAGE++++++++++++++++++++++++++++++++++++++++++++
+#==============================================================================================
+
+#==============================================================================================
+#++++++++++++++++++++++++++++++++++++++++SYSTEM TABS+++++++++++++++++++++++++++++++++++++++++++
+${SYS_ADD_USERS} =  css=#add_users
+${SYS_VIEW_ROLES} =  css=#checkRole
+${SYS_IP_ROLES} =  css=#viewIp
+${SYS_CURRENCY_SETTINGS} =  css=#view_currency
+${SYS_USER_LOGS} =  css=#view_logs
+${SYS_DUPL_ACCOUNT} =  css=#view_api_settings
+${SYS_GAME_DESC} =  css=#viewGameDescription
+${SYS_GAME_API} =  css=#viewGameApi
+${SYS_PAYMENT_API} =  css=#viewPaymentApi
+${SYS_REG_SETTINGS} =  css=#view_registration_setting
+${SYS_PAYMENT_SETTINGS} =  css#view_payment_settings
+${SYS_GAME_TYPE} =  css=#viewGameType
+${SYS_SYSTEM_SETTINGS} =  css=#view_system_settings
+${SYS_WEB_IP_RULES} =  css=#viewCountry
+${SYS_NOTIF_MGMT} =  css=#viewNotification
+${SYS_SYSTEM_FEATURES} =  css=#viewSystemFeatures
+#==============================================================================================
+#+++++++++++++++++++++++++++++++SYSTEM PAGE HOME WINDOW++++++++++++++++++++++++++++++++++++++++
+${HOME_SYSTEM} =  css=#bs-navbar-collapse-1 > nav > div > ul:nth-child(1) > li:nth-child(8) > a
+${SYS_USERNAME} =  css=#username
+${SYS_SEARCH_BTN} =  css=#collapseViewUsers > div.panel-footer > div > button
+${SYS_NEW_USER_DET_BTN} =  css=#my_form > div > div:nth-child(1) > a
+${SYS_DELETE_BTN} =  css=#my_form > div > div:nth-child(1) > button.btn.btn-danger.btn-sm
+${SYS_LOCK_BTN} =  css=#my_form > div > div:nth-child(1) > button.btn.btn-warning.btn-sm
+${SYS_UNLOCK_BTN} =  css=#my_form > div > div:nth-child(1) > button.btn.btn-success.btn-sm
+${SYS_SHOW_ENTRIES_DD} =  css=#my_table_length > label > select > option:nth-child(1)
+#==============================================================================================
+#+++++++++++++++++++++++++++++++++++ADDITION OF NEW SMARTBACKEND USERS+++++++++++++++++++++++++
+${SYS_ROLE_RADBTN} =  css=#my_form > div > div > div > div.panel-body > div > table > tbody > tr:nth-child(2) > td:nth-child(1) > input
+${SYS_ROLE_SUBMIT_BTN} =  css=#my_form > div > div > div > div.panel-footer > div.nav.pull-right > button
+${SYS_NEW_USER_DETAILS} =  css=#username
+${SYS_NEW_REAL_NAME} =  css=#realname
+${SYS_EMAIL} =  css=#email
+${SYS_DEPT} =  css=#department
+${SYS_POSITION} =  css=#position
+${SYS_PASSWORD1} =  css=#password
+${SYS_PASSWORD2} =  css=#cpassword
+${SYS_MAX_APPROVAL} =  css=#wid_amt
+${SYS_NOTES} =  css=#email_panel_body > div:nth-child(7) > div > textarea
+${SYS_SUBMIT_BTN} =  css=#my_form > div.row > div > div > div.panel-footer > div.pull-right > button
+#==============================================================================================
