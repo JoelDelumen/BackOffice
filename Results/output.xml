@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20170410 10:47:11.186" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
+<robot generated="20170407 16:41:41.251" generator="Robot 3.0.2 (Python 2.7.13 on win32)">
 <suite source="C:\Users\TRPLEONE\PycharmProjects\SmartBackEnd\Test\Yuanbao\Test.robot" id="s1" name="Test">
-<test id="s1-t1" name="YB Approved Deposit">
+<test id="s1-t1" name="User Deposit">
 <kw type="setup" name="YB BrowserInit" library="Keywords">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
@@ -9,10 +9,10 @@
 <arg>${YB_URL}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20170410 10:47:11.286" level="INFO">Opening browser 'chrome' to base url 'http://admin.yuanbao.og.office'</msg>
-<status status="PASS" endtime="20170410 10:47:15.738" starttime="20170410 10:47:11.270"></status>
+<msg timestamp="20170407 16:41:41.352" level="INFO">Opening browser 'chrome' to base url 'http://admin.yuanbao.og.office'</msg>
+<status status="PASS" endtime="20170407 16:41:45.798" starttime="20170407 16:41:41.352"></status>
 </kw>
-<status status="PASS" endtime="20170410 10:47:15.738" starttime="20170410 10:47:11.270"></status>
+<status status="PASS" endtime="20170407 16:41:45.799" starttime="20170407 16:41:41.352"></status>
 </kw>
 <kw name="YB Login" library="Keywords">
 <kw name="Input Text" library="Selenium2Library">
@@ -21,8 +21,8 @@
 <arg>${UNAMEBOX}</arg>
 <arg>${UNAME}</arg>
 </arguments>
-<msg timestamp="20170410 10:47:15.744" level="INFO">Typing text 'superadmin' into text field 'css=#login'</msg>
-<status status="PASS" endtime="20170410 10:47:15.877" starttime="20170410 10:47:15.743"></status>
+<msg timestamp="20170407 16:41:45.805" level="INFO">Typing text 'superadmin' into text field 'css=#login'</msg>
+<status status="PASS" endtime="20170407 16:41:45.945" starttime="20170407 16:41:45.803"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
@@ -30,99 +30,149 @@
 <arg>${PWBOX}</arg>
 <arg>${YB_PWORD}</arg>
 </arguments>
-<msg timestamp="20170410 10:47:15.878" level="INFO">Typing text 'laifuwifi999' into text field 'css=#password'</msg>
-<status status="PASS" endtime="20170410 10:47:15.975" starttime="20170410 10:47:15.878"></status>
+<msg timestamp="20170407 16:41:45.946" level="INFO">Typing text 'laifuwifi999' into text field 'css=#password'</msg>
+<status status="PASS" endtime="20170407 16:41:46.047" starttime="20170407 16:41:45.946"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
 <arg>${LOGINBTN}</arg>
 </arguments>
-<msg timestamp="20170410 10:47:15.976" level="INFO">Clicking element 'css=body &gt; div &gt; div:nth-child(1) &gt; div.panel.panel-primary &gt; div.panel-body &gt; form &gt; center &gt; div &gt; input'.</msg>
-<status status="PASS" endtime="20170410 10:47:17.395" starttime="20170410 10:47:15.975"></status>
+<msg timestamp="20170407 16:41:46.047" level="INFO">Clicking element 'css=body &gt; div &gt; div:nth-child(1) &gt; div.panel.panel-primary &gt; div.panel-body &gt; form &gt; center &gt; div &gt; input'.</msg>
+<status status="PASS" endtime="20170407 16:41:46.972" starttime="20170407 16:41:46.047"></status>
 </kw>
-<status status="PASS" endtime="20170410 10:47:17.396" starttime="20170410 10:47:15.742"></status>
+<status status="PASS" endtime="20170407 16:41:46.973" starttime="20170407 16:41:45.802"></status>
 </kw>
-<kw name="YB Approved Deposit" library="Keywords">
+<kw name="YB Search Player" library="Keywords">
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>${HOME_PAYMENT_TAB}</arg>
+<arg>${HOME_PLAYER_TAB}</arg>
 </arguments>
-<msg timestamp="20170410 10:47:17.405" level="INFO">Clicking element 'xpath=//*[@id="bs-navbar-collapse-1"]/nav/div/ul[1]/li[3]/a'.</msg>
-<status status="PASS" endtime="20170410 10:47:18.093" starttime="20170410 10:47:17.403"></status>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
-<doc>Click element identified by `locator`.</doc>
-<arguments>
-<arg>${PAY_DETAIL_BTN}</arg>
-</arguments>
-<msg timestamp="20170410 10:47:18.094" level="INFO">Clicking element 'css=#deposit-table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(1) &gt; span'.</msg>
-<status status="PASS" endtime="20170410 10:47:18.192" starttime="20170410 10:47:18.093"></status>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<doc>Pauses the test executed for the given time.</doc>
-<arguments>
-<arg>2s</arg>
-</arguments>
-<msg timestamp="20170410 10:47:20.198" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" endtime="20170410 10:47:20.198" starttime="20170410 10:47:18.192"></status>
+<msg timestamp="20170407 16:41:46.977" level="INFO">Clicking element 'xpath=//*[@id="bs-navbar-collapse-1"]/nav/div/ul[1]/li[1]/a'.</msg>
+<status status="PASS" endtime="20170407 16:41:47.796" starttime="20170407 16:41:46.977"></status>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
-<arg>${PAY_REMARKS}</arg>
-<arg>${PAY_REMARKS_COMMENT}</arg>
+<arg>${PL_SEARCH_TB}</arg>
+<arg>${USER1}</arg>
 </arguments>
-<msg timestamp="20170410 10:47:20.198" level="INFO">Typing text 'This is a test' into text field 'xpath=//*[@id="remarksTxt"]'</msg>
-<status status="PASS" endtime="20170410 10:47:20.375" starttime="20170410 10:47:20.198"></status>
+<msg timestamp="20170407 16:41:47.797" level="INFO">Typing text 'testley1' into text field 'css=#username'</msg>
+<status status="PASS" endtime="20170407 16:41:48.001" starttime="20170407 16:41:47.796"></status>
 </kw>
 <kw name="Click Element" library="Selenium2Library">
 <doc>Click element identified by `locator`.</doc>
 <arguments>
-<arg>${PAY_APPROVE_BTN}</arg>
+<arg>${PL_SEARCH_BTN}</arg>
 </arguments>
-<msg timestamp="20170410 10:47:20.376" level="INFO">Clicking element 'xpath=//*[@id="approve_btn"]'.</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20170410 10:47:20.532" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20170410 10:47:20.532" starttime="20170410 10:47:20.422"></status>
+<msg timestamp="20170407 16:41:48.001" level="INFO">Clicking element 'xpath=//*[@id="collapsePlayerList"]/div[3]/input[2]'.</msg>
+<status status="PASS" endtime="20170407 16:41:48.736" starttime="20170407 16:41:48.001"></status>
 </kw>
-<msg timestamp="20170410 10:47:20.533" level="FAIL">ElementNotVisibleException: Message: element not visible
-  (Session info: chrome=57.0.2987.133)
-  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64)
-</msg>
-<status status="FAIL" endtime="20170410 10:47:20.533" starttime="20170410 10:47:20.375"></status>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${PL_SEARCH_RESULT}</arg>
+</arguments>
+<msg timestamp="20170407 16:41:48.737" level="INFO">Clicking element 'css=#player-table &gt; tbody &gt; tr &gt; td:nth-child(3) &gt; a'.</msg>
+<status status="PASS" endtime="20170407 16:41:49.580" starttime="20170407 16:41:48.736"></status>
 </kw>
-<status status="FAIL" endtime="20170410 10:47:20.533" starttime="20170410 10:47:17.400"></status>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20170407 16:41:52.585" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" endtime="20170407 16:41:52.586" starttime="20170407 16:41:49.581"></status>
+</kw>
+<kw name="Element Should Be Visible" library="Selenium2Library">
+<doc>Verifies that the element identified by `locator` is visible.</doc>
+<arguments>
+<arg>css=#main_content &gt; div.col-md-12 &gt; div:nth-child(1) &gt; div &gt; div &gt; fieldset &gt; legend &gt; h4 &gt; b</arg>
+</arguments>
+<msg timestamp="20170407 16:41:52.587" level="INFO">Verifying element 'css=#main_content &gt; div.col-md-12 &gt; div:nth-child(1) &gt; div &gt; div &gt; fieldset &gt; legend &gt; h4 &gt; b' is visible.</msg>
+<status status="PASS" endtime="20170407 16:41:52.654" starttime="20170407 16:41:52.586"></status>
+</kw>
+<status status="PASS" endtime="20170407 16:41:52.654" starttime="20170407 16:41:46.976"></status>
+</kw>
+<kw name="YB New Deposit" library="Keywords">
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${NEW_DEPOSIT_BTN}</arg>
+</arguments>
+<msg timestamp="20170407 16:41:52.654" level="INFO">Clicking element 'css=#main_content &gt; div.col-md-12 &gt; div:nth-child(2) &gt; fieldset &gt; div &gt; a:nth-child(7) &gt; span'.</msg>
+<status status="PASS" endtime="20170407 16:41:53.294" starttime="20170407 16:41:52.654"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${DEP_USERNAME_BOX}</arg>
+<arg>${USER1}</arg>
+</arguments>
+<msg timestamp="20170407 16:41:53.295" level="INFO">Typing text 'testley1' into text field 'css=#username'</msg>
+<status status="PASS" endtime="20170407 16:41:53.406" starttime="20170407 16:41:53.294"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${DEP_MAIN_WALLET}</arg>
+<arg>100</arg>
+</arguments>
+<msg timestamp="20170407 16:41:53.407" level="INFO">Typing text '100' into text field 'css=#amount'</msg>
+<status status="PASS" endtime="20170407 16:41:53.504" starttime="20170407 16:41:53.406"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${DEP_PLAYER_ACCOUNT}</arg>
+</arguments>
+<msg timestamp="20170407 16:41:53.504" level="INFO">Clicking element 'xpath=//*[@id="account"]/optgroup/option'.</msg>
+<status status="PASS" endtime="20170407 16:41:53.561" starttime="20170407 16:41:53.504"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${DEP_NOTE}</arg>
+<arg>Test Deposit</arg>
+</arguments>
+<msg timestamp="20170407 16:41:53.562" level="INFO">Typing text 'Test Deposit' into text field 'css=#reason'</msg>
+<status status="PASS" endtime="20170407 16:41:53.693" starttime="20170407 16:41:53.561"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${DEP_ADD_BTN}</arg>
+</arguments>
+<msg timestamp="20170407 16:41:53.694" level="INFO">Clicking element 'css=#main_content &gt; div &gt; div &gt; div &gt; div.panel-footer &gt; div &gt; button'.</msg>
+<status status="PASS" endtime="20170407 16:41:53.787" starttime="20170407 16:41:53.694"></status>
+</kw>
+<status status="PASS" endtime="20170407 16:41:53.787" starttime="20170407 16:41:52.654"></status>
 </kw>
 <kw type="teardown" name="Close" library="Keywords">
 <kw name="Close Browser" library="Selenium2Library">
 <doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20170410 10:47:23.631" starttime="20170410 10:47:20.535"></status>
+<status status="PASS" endtime="20170407 16:41:56.928" starttime="20170407 16:41:53.790"></status>
 </kw>
-<status status="PASS" endtime="20170410 10:47:23.631" starttime="20170410 10:47:20.535"></status>
+<status status="PASS" endtime="20170407 16:41:56.928" starttime="20170407 16:41:53.790"></status>
 </kw>
 <tags>
-<tag>DepositTest2</tag>
+<tag>Deposit</tag>
 </tags>
-<status status="FAIL" endtime="20170410 10:47:23.631" critical="yes" starttime="20170410 10:47:11.270">ElementNotVisibleException: Message: element not visible
-  (Session info: chrome=57.0.2987.133)
-  (Driver info: chromedriver=2.28.455520 (cc17746adff54984afff480136733114c6b3704b),platform=Windows NT 10.0.14393 x86_64)
-</status>
+<status status="PASS" endtime="20170407 16:41:56.928" critical="yes" starttime="20170407 16:41:41.352"></status>
 </test>
-<status status="FAIL" endtime="20170410 10:47:23.631" starttime="20170410 10:47:11.186"></status>
+<status status="PASS" endtime="20170407 16:41:56.928" starttime="20170407 16:41:41.251"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="1" pass="0">DepositTest2</stat>
+<stat fail="0" pass="1">Deposit</stat>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Test" pass="0">Test</stat>
+<stat fail="0" id="s1" name="Test" pass="1">Test</stat>
 </suite>
 </statistics>
 <errors>
